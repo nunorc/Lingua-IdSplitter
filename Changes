@@ -1,0 +1,12 @@
+
+{{$NEXT}}
+
+    * simple handle of more hard split markers ('-','::' and '.')
+    * consider sequences of numbers valid words
+    * small tweaks to the main algorithm
+    * update copyright holder
+
+0.01_1    2014-03-18 10:38:52WET+0000 Europe/Lisbon
+
+    * First release, still under development.
+
