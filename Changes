@@ -1,6 +1,8 @@
 
 {{$NEXT}}
 
+0.01      2015-12-01 15:41:14+00:00 Europe/Lisbon
+
     * simple handle of more hard split markers ('-','::' and '.')
     * consider sequences of numbers valid words
     * small tweaks to the main algorithm
