@@ -1,9 +1,10 @@
-sudo: false
 language: perl
 perl:
    - '5.22'
    - '5.20'
    - '5.18'
+before_install:
+  - sudo apt-get install aspell
 install:
    - cpanm Dist::Zilla~5.039
    - dzil authordeps --missing | cpanm
