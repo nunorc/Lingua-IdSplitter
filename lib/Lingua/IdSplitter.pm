@@ -325,15 +325,36 @@ __END__
 
 =head1 DESCRIPTION
 
-TODO
+This module implements and algorithm to identify and split multi-word
+identifier in their individual words. For example, "UserFind" in "user"
+and "find", or "timesort" in "time" and "sort".
+
+For more details on the algorithm check the following
+L<article|http://www.sciencedirect.com/science/article/pii/S0164121214002179>
+(also available L<here|http://hdl.handle.net/10198/11577>).
 
 =func new
 
+Create a new splitter object. A list of specific dictionaries is optional,
+check the C<bin/id-splitter> command for an example on how to use more
+dictionaries.
+
 =func soft_split
+
+Perform a soft split of the identifier, ie split words without using
+explicit markers (eg, the underscore character, or CamelCase notation).
 
 =func hard_split
 
+Perform a hard split of the identifier, ie split words using
+explicit markers (eg, the underscore character, or CamelCase notation).
+
 =func split
 
+Perform a split applying first a hard split, and the applying a soft split
+to the resulting set of the first split.
+
 =func explain
+
+Show the computed ranked (including scores) for a split.
 
