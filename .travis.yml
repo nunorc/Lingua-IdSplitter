@@ -4,7 +4,7 @@ perl:
    - '5.20'
    - '5.18'
 before_install:
-  - sudo apt-get install aspell
+  - sudo apt-get install aspell libaspell libaspell-dev
 install:
    - cpanm Dist::Zilla~5.039
    - dzil authordeps --missing | cpanm
