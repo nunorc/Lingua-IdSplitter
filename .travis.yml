@@ -8,6 +8,6 @@ before_install:
 install:
    - cpanm Dist::Zilla~5.039
    - dzil authordeps --missing | cpanm
-   - dzil listdeps --author --missing | cpanm
+   - dzil listdeps --author --missing | cpanm --verbose --no-interactive
 script:
    - dzil test --release --author
