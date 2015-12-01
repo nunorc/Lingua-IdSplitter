@@ -1,0 +1,12 @@
+sudo: false
+language: perl
+perl:
+   - '5.22'
+   - '5.20'
+   - '5.18'
+install:
+   - cpanm Dist::Zilla~5.039
+   - dzil authordeps --missing | cpanm
+   - dzil listdeps --author --missing | cpanm
+script:
+   - dzil test --release --author
