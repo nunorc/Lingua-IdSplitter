@@ -6,6 +6,10 @@ use warnings FATAL => 'all';
 use Test::More;
 use Lingua::IdSplitter;
 
+use POSIX qw(locale_h);
+use locale;
+setlocale(LC_ALL, 'en_US');
+
 my $splitter = Lingua::IdSplitter->new;
 
 my %ids = (
