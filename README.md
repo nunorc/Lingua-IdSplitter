@@ -4,7 +4,7 @@ Lingua::IdSplitter - split identifiers into words
 
 # VERSION
 
-version 0.01
+version 0.02
 
 # SYNOPSIS
 

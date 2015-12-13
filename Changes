@@ -1,6 +1,10 @@
 
 {{$NEXT}}
 
+0.02      2015-12-13 18:04:21+00:00 Europe/Lisbon
+
+    * force english locale for testing (SREZIC++ for report)
+
 0.01      2015-12-01 15:41:14+00:00 Europe/Lisbon
 
     * simple handle of more hard split markers ('-','::' and '.')
