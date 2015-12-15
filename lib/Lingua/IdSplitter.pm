@@ -24,6 +24,7 @@ sub new {
       push @{$self->{dicts}}, $d;
     }
   }
+  $self->{speller} = Text::Aspell->new;
 
   return $self;
 }
@@ -59,7 +60,6 @@ sub _load_dict {
 
 sub soft_split {
   my ($self, $id) = @_;
-  $self->{speller} = Text::Aspell->new;
   $id = lc $id;
   return () unless ($self->{speller} and $id);
 
