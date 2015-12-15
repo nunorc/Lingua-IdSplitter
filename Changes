@@ -1,6 +1,10 @@
 
 {{$NEXT}}
 
+0.03      2015-12-15 16:24:58+00:00 Europe/Lisbon
+
+    * set aspell lang for testing instead of forcing locales
+
 0.02      2015-12-13 18:04:21+00:00 Europe/Lisbon
 
     * force english locale for testing (SREZIC++ for report)
