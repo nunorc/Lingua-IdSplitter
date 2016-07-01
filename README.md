@@ -15,7 +15,7 @@ version 0.03
 
 # DESCRIPTION
 
-This module implements and algorithm to identify and split multi-word
+This module implements an algorithm to identify and split multi-word
 identifier in their individual words. For example, "UserFind" in "user"
 and "find", or "timesort" in "time" and "sort".
 
